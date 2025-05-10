@@ -1,4 +1,5 @@
 import { useRef, useState, useCallback } from "react";
+import { useFetch } from "./hooks/useFetch.js";
 
 import Places from "./components/Places.jsx";
 import Modal from "./components/Modal.jsx";
@@ -7,7 +8,6 @@ import logoImg from "./assets/logo.png";
 import AvailablePlaces from "./components/AvailablePlaces.jsx";
 import { fetchUserPlaces, updateUserPlaces } from "./http.js";
 import Error from "./components/Error.jsx";
-import useFetch from "./hooks/useFetch.js";
 
 function App() {
   const selectedPlace = useRef();
